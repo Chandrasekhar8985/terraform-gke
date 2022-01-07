@@ -3,7 +3,7 @@ variable "name" {
 }
 
 variable "project" {
-  default = "probable-signal-336505"
+  default = "myproject44183"
 }
 
 variable "location" {
