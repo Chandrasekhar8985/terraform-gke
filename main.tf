@@ -7,15 +7,11 @@ resource "google_container_cluster" "default" {
   remove_default_node_pool = true
   initial_node_count       = var.initial_node_count
 
-  master_auth {
-    username = "chandrasekharreddysalla@gmail.com"
-    password = "Chandrasekhar@123"
-
     client_certificate_config {
       issue_client_certificate = false
     }
   }
-}
+
 
 resource "google_container_node_pool" "default" {
   name       = "${var.name}-node-pool"
